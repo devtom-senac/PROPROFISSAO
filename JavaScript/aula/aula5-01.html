@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando troca de conteúdo e formatação usando o JavaScript</title>
+    <style>
+        .fundo{
+            background-color: bisque;
+            color: darkred;
+            text-align: center;
+        }
+
+        .myImage{
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo body, a cor da fonte e a imagem na página</h1>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, minima quia? Blanditiis necessitatibus soluta ut recusandae qui excepturi architecto sequi? Blanditiis incidunt optio iste sequi aperiam officiis nemo aliquid quod!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem voluptate repudiandae accusantium. Dolorem, ipsam cupiditate necessitatibus totam quam, iusto corporis recusandae sit architecto voluptatum unde obcaecati perspiciatis quae labore?
+    </p>
+
+    <input type="button" id="verde" value="tema verde" onclick="verde()"/>
+    <input type="button" id="azul" value="tema azul" onclick="azul()"/>
+    <input type="button" id="voltar" value="voltar" onclick="voltar()"/>
+    <input type="button" id="modoEscuro" value="modo escuro" onclick="modoEscuro()"/>
+    <input type="button" id="modoDaltonico" value="modo daltonico" onclick="modoDaltonico()"/>
+    <input type="button" id="baixaVisao" value="modo baixa visao" onclick="baixaVisao()"/>
+    <input type="button" id="normal" value="modo normal" onclick="normal()"/>
+
+    <hr>
+
+    <img class="myImage" src="../imagensjs/fundo.jpg" alt="estrada dentro da floresta"/>
+
+    <script>
+        var element = document.getElementById("titulo")
+
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="../imagensjs/ceu.jpg";
+
+            element.innerHTML = "Testando função verde";
+        }
+
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="yellow";
+            document.querySelector(".myImage").src="../imagensjs/branco.jpg";
+
+            element.innerHTML = "Testando função azul ";
+        }
+
+        function voltar(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color="darkred";
+            document.querySelector(".myImage").src="../imagensjs/fundo.jpg";
+
+            element.innerHTML = "Testando mudança de cor de fundo body, a cor da fonte e a imagem na página";
+        }
+
+        function modoEscuro(){
+            document.querySelector(".fundo").style.backgroundColor="black";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="../imagensjs/fundo.jpg";
+
+            element.innerHTML = "Testando modo escuro";
+        }
+
+        function modoDaltonico(){
+            document.querySelector(".fundo").style.backgroundColor="pink";
+            document.querySelector(".fundo").style.color="green";
+            document.querySelector(".myImage").src="../imagensjs/daltonismo.jpg";
+
+            element.innerHTML = "Testando modo Daltonico";
+        }
+
+        function baixaVisao(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="30px";
+
+            document.querySelector(".myImage").src="../imagensjs/fundo.jpg";
+
+            element.innerHTML = "Testando modo baixa visao";
+        }
+
+        function normal(){
+            document.querySelector(".fundo").style.fontSize="20px";
+        }
+    </script>
+</body>
+</html>

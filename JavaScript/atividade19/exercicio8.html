@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>
-        8.
-    </h1>
 
-    <script>
-     
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    8.Programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do
+    segundo e vice-versa.
+  </h1>
+
+  <script>
+    let v1 = parseInt(prompt("Digite o 1° valor:"));
+    let v2 = parseInt(prompt("Digite o 2° valor: "));
+
+    document.write("Valor 1: " + v1 + "<br>" + "Valor 2: " + v2 + "<br>");
+
+    let troca = v1;
+    v1 = v2;
+    v2 = troca;
+
+    document.write("Valores trocados: <br>");
+    document.write("Valor 1: " + v1 + "<br>" + "Valor 2: " + v2 + "<br>");
+</script>
+
+</body>
+
 </html>

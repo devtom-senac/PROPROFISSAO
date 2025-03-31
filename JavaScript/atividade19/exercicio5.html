@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>
-       5.
-    </h1>
 
-    <script>
-      
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    5.Programa que leia o preço de um produto e a quantidade comprada, e calcule o valor total a ser pago com desconto de 10% se a quantidade for maior que 10 unidades.
+  </h1>
+
+  <script>
+    let preco = parseInt(prompt("Insira o valor do produto: "));
+    let quantidade = parseInt(prompt("Insira a quantidade de produtos: "));
+    let valorTotal = preco * quantidade;
+    if (quantidade > 10) valorTotal *= 0.9;
+
+    document.write("Valor Total: R$ " + valorTotal.toFixed(2));
+  </script>
+</body>
+
 </html>
