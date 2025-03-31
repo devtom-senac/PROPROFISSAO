@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>
+        Preços de diárias
+    </h1>
+    <section>
+        <ul>
+            <li>
+                <a href="#">Básico | Preço (diária): R$ 55,00</a>
+            </li>
+            <li>
+                <a href="#">Premium | Preço (diária): R$ 100,00</a>
+            </li>
+            <li>
+                <a href="#">Luxo | Preço (diária): R$ 150,00</a>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        const basico = 55.50
+        const premium = 55.50
+        const luxo = 55.50
+        let quantidade = parseInt(prompt("Quantos dias ficará hospedado ? "))
+
+        if (quantidade > 30) {
+            prompt("Sua hepedagem não deve ultrapassar 30 dia")
+            let quantidade = parseInt(prompt("Quantos dias ficará hospedado ? (A máximo 30 dias"))
+            return
+        }
+
+        let diaria = prompt("Escolha o tipo de quarto: " + "Básico | Preço (diária): R$ 55,00" + "Premium | Preço (diária): R$ 100,00" + "Luxo | Preço (diária): R$ 150,00")
+
+        let total
+
+        switch (diaria) {
+            case "básico" :
+                total = basico*quantidade
+                alert("O valor total da sua estadia será: " + total) 
+                break 
+            case "premium" :
+                total = premium*quantidade
+                alert("O valor total da sua estadia será: " + total)
+                break
+            case "luxo" :
+                total = premium*quantidade
+                alert("O valor total da sua estadia será: " + total)
+                break
+                default:alert("opção inválida")
+        }
+    </script>
+
+
+</body>
+</html>

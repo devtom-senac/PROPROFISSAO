@@ -1,0 +1,73 @@
+h1{
+    text-align: center;
+}
+
+.button{
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: blue;
+    box-shadow: 5px 5px 5px  black;
+}
+
+.janelaEscura{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(70, 50, 50, 80%);
+    visibility: hidden;
+}
+
+@keyframes abreModal{
+    from{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    to{
+        opacity: 1;
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.modal, .imagem{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    visibility: hidden;
+    animation-name: abreModal;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.imagem{
+    width: 450px;
+    height: 450px;
+}
+
+.fechar{
+    width: 20px;
+    height: 20px;
+    color: #000;
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+    text-align: center;
+}
