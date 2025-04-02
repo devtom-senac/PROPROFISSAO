@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cdastro de Hospedes</title>
+  </head>
+  <body>
+    <script>
+      let valorDiaria = parseFloat(prompt("Qual o valor padrão da diária?"));
+      let gratuidade = 0;
+      let meia = 0;
+      let valorTotal = 0;
+
+      while (true) {
+        let nome = prompt("Qual o nome do Hóspede?");
+        if (nome.toUpperCase() === "PARE") break;
+
+        let idade = parseInt(prompt("Qual a idade do Hóspede?"));
+        let mensagemCadastro = nome + " cadastrada(o) com sucesso.";
+
+        if (idade < 6) {
+          mensagemCadastro += " " + nome + " possui gratuidade.";
+          gratuidade++;
+        } else if (idade > 60) {
+          mensagemCadastro += " " + nome + " paga meia.";
+          meia++;
+          valorTotal += valorDiaria / 2;
+        } else {
+          valorTotal += valorDiaria;
+        }
+
+        document.write(mensagemCadastro);
+      }
+
+      document.write(
+        "O valor total das hospedagens é: R$" +
+          valorTotal +
+          "; " +
+          gratuidade +
+          " gratuidade(s); " +
+          meia +
+          " meia(s)."
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hora de pensar</title>
+  </head>
+  <body>
+    <h1>BEM VINDO AO HOTEL</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="">INÍCIO</a>
+        </li>
+        <li>
+          <a href="diarias.html" target="_blank">DIARIAS</a>
+        </li>
+        <li>
+          <a href="">CADASTRO</a>
+        </li>
+        <li>
+          <a href="">EVENTOS</a>
+        </li>
+        <li>
+          <a href="">BUFFET</a>
+        </li>
+        <li>
+          <a href="">AUDITÓRIO</a>
+        </li>
+        <li>
+          <a href="">POSTOS</a>
+        </li>
+        <li>
+          <a href="">MANUTENÇÃO</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      let nomeDoHotel = prompt("Qual o nome do hotel?");
+      alert("O nome do hotel é: " + nomeDoHotel);
+
+      let nomeDoUsuario = prompt("Qual o nome do usuário?");
+      let senhaDoUsuario = Number(prompt("Qual a senha do usuário?"));
+
+      if (senhaDoUsuario === 2678) {
+        alert("Bem-vindo ao Hotel " + nomeDoHotel + ", " + nomeDoUsuario);
+        inicio();
+      } else {
+        alert("Senha inválida!");
+      }
+
+      function inicio() {
+        let opcao = Number(
+          prompt("Menu Principal:\n1 - Opção 1\n2 - Opção 2\n3 - Sair")
+        );
+
+        switch (opcao) {
+          case 1:
+            alert("Você escolheu a Opção 1");
+            inicio();
+            break;
+          case 2:
+            alert("Você escolheu a Opção 2");
+            inicio();
+            break;
+          case 3:
+            alert("Muito obrigado e até logo, " + nomeDoUsuario);
+            break;
+          default:
+            erro();
+        }
+      }
+
+      function erro() {
+        alert("Opção inválida! Tente novamente.");
+        inicio();
+      }
+    </script>
+  </body>
+</html>

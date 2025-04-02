@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Reservas de Estadia</h1>
+
+    <script>
+        const basico = 55;
+        const premium = 100;
+        const luxo = 150;
+
+        let quantidade = parseInt(prompt("Quantos dias ficará hospedado? (Máximo 30 dias)"));
+
+        if (quantidade > 30 || quantidade < 1) {
+            alert("Sua hospedagem deve ter pelomenos 1 dia e no máximo 30 dias.");
+        } else {
+            let diaria = prompt("Escolha o tipo de quarto: basico, premium ou luxo (por favor não utilize acentos)").toLowerCase();
+            let total = 0;
+
+            if (diaria === "basico") {
+                total = basico * quantidade;
+            } else if (diaria === "premium") {
+                total = premium * quantidade;
+            } else if (diaria === "luxo") {
+                total = luxo * quantidade;
+            } else {
+                alert("Opção inválida");
+            }
+
+            if (total > 0) {
+                document.write("O valor total da sua estadia será: R$ " + total);
+            }
+        }
+    </script>
+</body>
+</html>
