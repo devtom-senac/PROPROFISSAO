@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      26.Programa que leia o código de um produto e a quantidade comprada, e
+      exiba o valor total a ser pago. Considere que cada produto tem um preço
+      diferente.
+    </h1>
+    <script>
+      let codigo = parseInt(prompt("Digite o código do produto (1 para café, 2 para água ou 3 para chá):"));
+      let preco;
+
+      if (codigo === 1) {
+        preco = 8.0;
+      } else if (codigo === 2) {
+        preco = 3.0;
+      } else if (codigo === 3) {
+        preco = 5.0;
+      } else {
+        document.write("Escolha uma bebida disponivel (1 para café, 2 para água ou 3 para chá)");
+      }
+
+      let quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+
+      if (preco) {
+        let total = preco * quantidade;
+        document.write("Valor total a pagar: R$ " + total.toFixed(2));
+      }
+    </script>
+  </body>
+</html>

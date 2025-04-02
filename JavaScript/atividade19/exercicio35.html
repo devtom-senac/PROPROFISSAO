@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      35.Programa que leia três números inteiros e exiba a média aritmética. Se
+      a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso
+      contrário, exiba a mensagem "Reprovado".
+    </h1>
+    <script>
+      let n1 = Number(prompt("Me diga a sua primeira nota:"));
+      let n2 = Number(prompt("Me diga a sua segunda nota:"));
+      let n3 = Number(prompt("Me diga a sua terceira nota:"));
+      let calculo = (n1 + n2 + n3) / 3;
+
+      if (calculo >= 7) {
+        document.write("Aprovado");
+      } else {
+        document.write("Reprovado");
+      }
+    </script>
+  </body>
+</html>

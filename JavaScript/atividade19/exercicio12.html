@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      12.Programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC).
+    </h1>
+
+    <script>
+      let peso = parseFloat(prompt("Entre com o seu peso"))
+        let altura = parseFloat(prompt("Entre com a sua altura"))
+
+        let imc = (peso / Math.pow(altura,2))        
+       
+        document.write("O seu IMC é de: " + imc.toFixed(2) + " kg/m2 " + "<br>")
+    </script>
+  </body>
+</html>

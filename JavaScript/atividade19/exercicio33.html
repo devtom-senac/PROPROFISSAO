@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>33.Programa que leia o nome e o turno (M ou V) de um aluno e exiba uma mensagem de saudação de acordo com o turno. Matutino: "Bom dia, aluno", Vespertino: "Boa tarde, aluno".</h1>
+    <script>
+        let nome = prompt("Entre com o seu nome: ")
+        let turno = prompt("Digite o seu turno (M para matutino e V para vespertino)").toLocaleUpperCase()
+        if (turno == "M") {
+            document.write("Bom dia " + nome)
+        } else if (turno == 'V') {
+            document.write("Boa tarde " + nome)
+        } else {
+            document.write("Digite V ou M para identificar seu turno")
+        }
+    </script>
+</body>
+</html>

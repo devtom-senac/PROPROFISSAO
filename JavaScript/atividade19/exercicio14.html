@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      14.Programa que leia a idade de uma pessoa em anos, meses e dias, e
+      calcule quantos dias de vida ela tem.
+    </h1>
+
+    <script>
+      let anos = parseInt(prompt("Digite sua idade em anos: "));
+      let meses = parseInt(
+        prompt("Digite quantos meses desde o mês do seu aniversario: ")
+      );
+      let dias = parseInt(
+        prompt("Digite quantos dias você tem além dos meses completos: ")
+      );
+
+      let totalDias = anos * 365.25 + meses * 30 + dias;
+
+      document.write(
+        "Você viveu aproximadamente " + Math.round(totalDias) + " dias."
+      );
+    </script>
+  </body>
+</html>

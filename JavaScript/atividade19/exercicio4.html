@@ -6,14 +6,19 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>4.Média Ponderada</h1>
+    <h1>
+      4.Programa que receba três notas de um aluno (cada nota de 0 a 10) e
+      calcule a média ponderada considerando pesos 2, 3 e 5 para as notas,
+      respectivamente.
+    </h1>
 
     <script>
-      let nota1 = 7;
-      let nota2 = 8;
-      let nota3 = 9;
-      let media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10;
-      
+      let nota1 = Number(prompt("Entre com a primeira nota: "));
+      let nota2 = Number(prompt("Digite a segunda nota: "));
+      let nota3 = Number(prompt("Digite a terceira nota: "));
+
+      let media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10
+
       document.write("Média Ponderada: " + media.toFixed(2));
     </script>
   </body>

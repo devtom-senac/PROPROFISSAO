@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      17.Programa que leia a idade de uma pessoa e exiba uma mensagem indicando
+      se ela é criança, adolescente, adulto ou idoso.
+    </h1>
+
+    <script>
+      let idade = parseInt(prompt("Entre com sua idade: "));
+
+      if (idade <= 12) {
+        document.write("Você é criança.");
+      } else if (idade <= 17) {
+        document.write("Você é adolescente.");
+      } else if (idade <= 59) {
+        document.write("Você é adulto.");
+      } else {
+        document.write("Você é idoso.");
+      }
+    </script>
+  </body>
+</html>

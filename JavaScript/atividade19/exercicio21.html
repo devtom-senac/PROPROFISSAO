@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+        21.Programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.
+    </h1>
+
+    <script>
+       let menor = 0
+        let maior = 0
+
+        let idade1 = parseInt(prompt("Entre com a idade do primeiro:"))
+        let idade2 = parseInt(prompt("Entre com a idade do segundo:"))
+        let idade3 = parseInt(prompt("Entre com a idade do terceiro:"))
+        let idade4 = parseInt(prompt("Entre com a idade do quarto:"))
+        let idade5 = parseInt(prompt("Entre com a idade do quinto:"))
+
+        idade1 < 18 ?  menor++ : maior++
+        idade2 < 18 ?  menor++ : maior++
+        idade3 < 18 ?  menor++ : maior++
+        idade4 < 18 ?  menor++ : maior++
+        idade5 < 18 ?  menor++ : maior++
+
+        document.write("Menores de idade: " + menor + "<br>")
+        document.write("Maiores de idade: " + maior)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>30.Programa que leia o número de maçãs compradas e exiba o valor total a ser pago. O preço das maçãs é de R$ 0,50 cada se a quantidade for menor que 12 e R$ 0,40 cada se a quantidade for igual ou maior que 12.</h1>
+    <script>
+        let quantidade = parseInt(prompt("Quantas maçãs você comprou?"));
+        let total;
+    
+        if (quantidade < 12) {
+            total = quantidade * 0.50;
+        } else {
+            total = quantidade * 0.40;
+        }
+    
+        document.write("Valor total a pagar: R$ " + total.toFixed(2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+        19.Programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.
+    </h1>
+
+    <script>
+       let nota1 = Number(prompt("Digite sua primeira nota: "));
+        let nota2 = Number(prompt("Digite sua segunda nota: "));
+        let nota3 = Number(prompt("Digite sua terceira nota: "));
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        if (media >= 7) {
+            document.write("Aluno aprovado!")
+        } else  {
+            document.write("Aluno reprovado!!")
+        }
+    </script>
+  </body>
+</html>

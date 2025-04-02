@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>28.Programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC) e a sua classificação. Considere a tabela de classificação do IMC.</h1>
+    <script>
+        let peso = Number(prompt("Entre com o seu peso: "));
+        let altura = Number(prompt("Entre com a sua altura: "));
+
+        let imc = (peso / Math.pow(altura,2))
+
+        document.write("O seu IMC é de: " + imc.toFixed(2) + "kg/m2")
+        
+        if (imc < 18.5) {
+            document.write("Você está abaixo do peso")
+        } else if (imc<= 24.9) {
+            document.write("Você está no peso adequado")
+        } else if (imc <= 29.9) {
+            document.write("Você está sobrepeso")
+        } else if (imc <= 34.9){
+            document.write("Você está com Obesidade grau 1")
+        } else if (imc <= 39.9) {
+            document.write("Você está com Obesidade grau 2")
+        } else {
+            document.write("Você está com Obesidade 3 ou Obesidade Mórbida")
+        }
+    </script>
+</body>
+</html>

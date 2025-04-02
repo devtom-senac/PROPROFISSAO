@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      23.Programa que leia o nome de um mês e exiba a quantidade de dias que ele
+      possui. Considere apenas meses válidos.
+    </h1>
+
+    <script>
+      let mes = prompt("Digite o nome do mês: ").toLocaleLowerCase();
+
+      if (mes == "fevereiro") {
+        document.write(mes + " tem 28 dias");
+      } else if (
+        mes == "janeiro" ||
+        mes == "maio" ||
+        mes == "março" ||
+        mes == "julho" ||
+        mes == "agosto" ||
+        mes == "outubro" ||
+        mes == "dezembro"
+      ) {
+        document.write(mes + " tem 31 dias.");
+      } else if (
+        mes == "abril" ||
+        mes == "setembro" ||
+        mes == "novembro" ||
+        mes == "junho"
+      ) {
+        document.write(mes + " tem 30 dias.");
+      } else {
+        document.write("Mês inválido");
+      }
+    </script>
+  </body>
+</html>
