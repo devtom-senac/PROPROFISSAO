@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.Cadastro hospedes 2</title>
+  </head>
+  <body>
+    <script>
+      let cadastros = [];
+
+      while (true) {
+        let opcao = prompt("Selecione uma opção:\n1- Cadastrar Hóspede\n2- Pesquisar Hóspede\n3- Sair");
+
+        if (opcao === "1") {
+          if (cadastros.length >= 15) {
+            alert("Máximo de cadastros atingido");
+            continue;
+          }
+
+          let nome = prompt("Qual o nome do Hóspede?");
+          cadastros.push(nome);
+          alert("Hóspede " + nome + " cadastrado com sucesso!");
+        }
+
+        else if (opcao === "2") {
+          let pesquisa = prompt("Qual o nome do Hóspede?");
+          let encontrado = cadastros.includes(pesquisa);
+
+          if (encontrado) {
+            alert("Hóspede " + pesquisa + " foi encontrado!");
+          } else {
+            alert("Hóspede " + pesquisa + " não foi encontrado!");
+          }
+        }
+
+        else if (opcao === "3") {
+          alert("Encerrando programa...");
+          break;
+        }
+
+        else {
+          alert("Opção inválida");
+        }
+      }
+    </script>
+  </body>
+</html>

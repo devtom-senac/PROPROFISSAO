@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.Auditorio</title>
+  </head>
+  <body>
+    <script>
+      var convidados = parseInt(
+        prompt("Qual o número de convidados para o seu evento?")
+      );
+      while (convidados > 350 || contador < 0) {
+        alert("Quantidade de convidados superior à capacidade máxima");
+        convidados = parseInt(
+          prompt("Qual o número de convidados para o seu evento?")
+        );
+      }
+      var laranja = 150;
+      var colorado = 350;
+      var contador = 0;
+      while (contador == 0) {
+        if (convidados <= 220) {
+          if (convidados > 150) {
+            add = convidados - 150;
+            alert("Use o auditório Laranja (inclua mais " + add + " cadeiras)");
+            pergunta = prompt("Gostaria de efetuar a reserva? S/N");
+            if (pergunta == "S") {
+              alert("Reserva efetuada com sucesso.");
+            } else {
+              alert("Reserva não efetuada.");
+            }
+            break;
+          }
+          alert("Recomendamos que use o auditório Laranja");
+          pergunta = prompt("Gostaria de efetuar a reserva? S/N");
+          if (pergunta == "S") {
+            alert("Reserva efetuada com sucesso.");
+          } else {
+            alert("Reserva não efetuada.");
+          }
+          break;
+        } else {
+          alert("Recomendamos que use o auditório Colorado");
+          pergunta = prompt("Gostaria de efetuar a reserva? S/N");
+          if (pergunta == "S") {
+            alert("Reserva efetuada com sucesso.");
+          } else {
+            alert("Reserva não efetuada.");
+          }
+          break;
+        }
+        contador += 1;
+      }
+    </script>
+  </body>
+</html>

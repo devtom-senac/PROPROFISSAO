@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Festa ou trabalho</title>
+</head>
+<body>
+    <script>
+        var custo = 10.50
+        var hora = parseInt(prompt("Qual a duração do evento em horas ?"))
+        var garcom = parseInt(prompt("Quantos garçons serão necessários ?"))
+        alert("Custo total: R$ " + ((hora * custo)*garcom).toFixed(2) )
+        var pergunta = prompt("Gostaria de efetuar a reserva? S/N")
+        if (pergunta == "S"){
+            alert("Reserva efetuada com sucesso.")
+        }else{
+            alert("Reserva não efetuada.")
+        }
+    </script>
+</body>
+</html>

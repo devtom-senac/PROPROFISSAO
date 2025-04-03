@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.Álcool ou gasolina ?</title>
+</head>
+<body>
+    <script>
+        let alcoolW = parseFloat(prompt( "Qual o valor do álcool no posto Wayne Oil ?"))
+        let gasolinaW = parseFloat(prompt( "Qual o valor da gasolina no posto Wayne Oil ?"))
+        let alcoolS = parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol ?"))
+        let gasolinaS = parseFloat(prompt( "Qual o valor da gasolina no posto Stark Petrol ?"))
+        let total = 42
+
+        let totalGW = total * gasolinaW
+        let totalAW = total * alcoolW
+        let descontoW = totalGW * 0.30
+        let comparaW = totalGW - descontoW
+
+        let totalGS = total * gasolinaS
+        let totalAS = total * alcoolS
+        let descontoS = totalGS * 0.30
+        let comparaS = totalGS - descontoS
+
+        if(gasolinaW > gasolinaS && alcoolW > alcoolS){
+            if(comparaS > totalAS){
+                alert("É mais barato abastecer com álcool no posto Stark Petrol")
+            }else{
+                alert("É mais barato abastecer com gasolina no posto Stark Petrol")
+            }
+
+        }else if(gasolinaW < gasolinaS && alcoolW < alcoolS){
+            if(comparaW > totalAW){
+                alert("É mais barato abastecer com álcool no posto Wayne Oil")
+            }else{
+                alert("É mais barato abastecer com gasolina no posto Wayne Oil")
+            }
+
+        }else if(gasolinaW > gasolinaS && alcoolW < alcoolS){
+            if(comparaS > totalAS){
+                alert("É mais barato abastecer com álcool no posto Stark Petrol")
+            }else{
+                alert("É mais barato abastecer com gasolina no posto Stark Petrol")
+            }
+        }else if(gasolinaW < gasolinaS && alcoolW > alcoolS){
+            if(comparaW > totalAW){
+                alert("É mais barato abastecer com álcool no posto Wayne Oil")
+            }else{
+                alert("É mais barato abastecer com gasolina no posto Wayne Oil")
+            }
+        }
+
+
+    </script>
+</body>
+</html>

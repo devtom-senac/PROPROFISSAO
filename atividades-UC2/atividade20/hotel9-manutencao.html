@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.Manutenção</title>
+  </head>
+  <body>
+    <script>
+     let contador = 0;
+     let lista_empresa = [];
+     let lista_valor = [];
+      while (contador == 0) {
+       let empresa = prompt("Qual o nome da empresa?");
+        lista_empresa.push(empresa);
+       let valorA = parseFloat(prompt("Qual o valor por aparelho ?"));
+       let qtd = parseInt(prompt("Qual a quantidade de aparelhos ?"));
+       let desconto = parseFloat(prompt("Qual a porcentagem de desconto ?"));
+       let vm = parseInt(
+          prompt("Qual o número mínimo de aparelhos para conseguir o desconto ?")
+        );
+        if (vm < qtd) {
+          valorD = valorA * qtd - valorA * qtd * (desconto / 100);
+          lista_valor.push(valorD);
+          alert(
+            "O serviço de " + empresa + "  custará R$ " + valorD.toFixed(2)
+          );
+        } else {
+          valorT = valorA * qtd;
+          lista_valor.push(valorT);
+          alert(
+            "O serviço de " + empresa + "  custará R$ " + valorT.toFixed(2)
+          );
+        }
+
+       let info = prompt(
+          "Deseja informar novos dados, " + empresa + " ? (S/N)"
+        );
+        if (info == "S") {
+          continue;
+        } else {
+          const resultado = Math.min(...lista_valor);
+          const posicao = lista_valor.indexOf(resultado);
+
+          alert(
+            "O orçamento de menor valor é o [" +
+              lista_empresa[posicao] +
+              " por R$ " +
+              resultado.toFixed(2) +
+              "]"
+          );
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

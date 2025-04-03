@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.Cadastro de hospede 1</title>
+  </head>
+  <body>
+    <script>
+      let valorDiaria = parseFloat(prompt("Qual o valor padrão da diária?"));
+      if (valorDiaria <= 0 || isNaN(valorDiaria)) {
+        alert("Valor inválido");
+      } else {
+        let gratuidade = 0;
+        let meia = 0;
+        let valorTotal = 0;
+
+        while (true) {
+          let nome = prompt("Digite o nome do hospede. \n" + "Digite um hospede por vez. \n" + "Ao finalizar digite PARE para encerrar o cadastro.");
+          if (nome.toUpperCase() === "PARE") break;
+
+          let idade = parseInt(prompt("Digite a idade do Hóspede ? "));
+          if (isNaN(idade) || idade < 0) {
+            alert("Idade inválida");
+            continue;
+          }
+
+          if (idade < 6) {
+            alert(nome + " possui gratuidade.");
+            gratuidade++;
+          } else if (idade > 60) {
+            alert(nome + " paga meia.");
+            meia++;
+            valorTotal += valorDiaria / 2;
+          } else {
+            valorTotal += valorDiaria;
+          }
+        }
+
+        alert("Quantidade de gratuidades: " + gratuidade + "<br>" + "Quantidade de meias hospedagens: " + meia + "<br>" + "Valor total das hospedagens: R$ " + valorTotal);
+      }
+    </script>
+  </body>
+</html>

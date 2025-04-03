@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffet</title>
+  </head>
+  <body>
+    <script>
+      let cafe = 0.2;
+      let agua = 0.5;
+      let salgado = 0.34;
+      let convidados = parseInt(
+        prompt("Qual o número de convidados para o evento?")
+      );
+      let contador = 0;
+      while (contador == 0) {
+        if (convidados > 350 || convidados < 0) {
+          alert(
+            "Quantidade de convidados superior à capacidade máxima ou é um número negativo."
+          );
+          convidados = parseInt(
+            prompt("Qual o número de convidados para o evento?")
+          );
+          continue;
+        } else if (convidados <= 350 && convidados > 0) {
+          total =
+            cafe * convidados * 0.8 +
+            agua * convidados * 0.4 +
+            7 * convidados * salgado;
+          alert(
+            "O evento precisará de " +
+              cafe * convidados +
+              " litros de café, " +
+              agua * convidados +
+              " litros de água, " +
+              7 * convidados +
+              " salgados. O custo total do evento será de R$ " +
+              total.toFixed(2)
+          );
+          pergunta = prompt("Gostaria de efetuar a reserva? S/N");
+          if (pergunta == "S") {
+            alert("Reserva efetuada com sucesso.");
+          } else {
+            alert("Reserva não efetuada.");
+          }
+        }
+        contador += 1;
+      }
+    </script>
+  </body>
+</html>
