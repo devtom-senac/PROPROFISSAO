@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+      6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar uma resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos
+      aprovados.
+    </h1>
+
+    <script>
+        let alunosAprovados = 0;
+        let resposta = 's';
+        let ordem = 0; 
+      
+        while (resposta.toLowerCase() === 's') {
+          let nota1 = parseFloat(prompt('Entre com a 1° nota'));
+          let nota2 = parseFloat(prompt('Entre com a 2° nota'));
+      
+          let media = (nota1 + nota2) / 2;
+
+          ordem++
+      
+          document.write(ordem + '° Média: '+ media + '<br>');
+      
+          if (media >= 9.5) {
+            alunosAprovados++;
+          }
+      
+          resposta = prompt('Digite "S" para calcular média de outro aluno e "N" para finalizar');
+        }
+      
+        document.write('Alunos aprovados: ' + alunosAprovados);
+      </script>
+      
+  </body>
+</html>

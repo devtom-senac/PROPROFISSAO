@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+      11 - Escreva um programa em que o usuário informe 10 valores e escreva
+      quantos desses valores lidos estão entre os números 24 e 42 (incluindo os
+      valores 24 e 42) e quantos deles estão fora deste intervalo..
+    </h1>
+
+    <script>
+        let dentro = 0;
+        let fora = 0;
+
+        for (let i = 1; i <= 10; i++){
+            let numero = parseInt(prompt('Digite o ' + i + '° número'))
+
+            if (numero >= 24 && numero <= 42) {
+                dentro++;
+            } else {
+                fora++;
+            }
+        }
+
+        document.write('Total de números que estão dentro de 24 e 42:' + dentro + '<br>');
+
+        document.write('Total de números que estão fora de 24 e 42:\n' + fora)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+      8 - Ler um valor N e imprimir todos os valores inteiros entre 1
+      (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+      N é um valor informado pelo usuário.
+    </h1>
+
+    <script>
+      let n = parseInt(prompt("Informe um valor inteiro maior que zero: "));
+
+      while (isNaN(n) || n <= 0) {
+        n = parseInt(
+          prompt("Valor inválido! Informe um número inteiro maior que zero: ")
+        );
+      }
+
+      for (let i = 1; i <= n; i++) {
+        document.writeln(i + "<br>");
+      }
+    </script>
+  </body>
+</html>

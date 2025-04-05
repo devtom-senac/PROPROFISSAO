@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+      5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois
+      números inteiros informados pelo usuário e todos os números inteiros entre
+      eles. Considere que o primeiro sempre será menor que o segundo.
+    </h1>
+
+    <script>
+      while (true) {
+        n1 = parseInt(prompt("Entre com o 1° número inteiro:"));
+        n2 = parseInt(
+          prompt(
+            'Digite o 2° número inteiro.\nPor favor digite um número maior que ' + n1 + ' :'
+          )
+        );
+
+        if (n1 < n2 && !isNaN(n1) && !isNaN(n2)) {
+          break;
+        } else {
+          alert(
+            "O 2° número deve ser maior que o 1°, e apenas números inteiros."
+          );
+        }
+      }
+      let soma = 0;
+      let contador = 0;
+
+      for (let i = n1; i <= n2; i++) {
+        soma += i;
+        contador++;
+      }
+
+      let mediaA = soma / contador;
+      document.write("A Média aritmética é: " + mediaA);
+    </script>
+  </body>
+</html>

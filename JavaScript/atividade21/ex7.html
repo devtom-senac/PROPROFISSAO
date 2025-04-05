@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+        7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+        Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+    </h1>
+
+    <script>
+        let somaNotas = 0;
+        let nota;
+      
+        for (let n = 1; n <= 6; n++) {
+          nota = parseFloat(prompt('Digite a ' + n + '° nota (0 a 10):'));
+      
+          while (nota < 0 || nota > 10 || isNaN(nota)) {
+            nota = parseFloat(prompt('Valor inválido! Digite novamente a ' + n + '° nota (0 a 10):'));
+          }
+      
+          somaNotas = somaNotas + nota;
+        }
+      
+        let media = somaNotas / 6;
+        document.write('Média do aluno: ' + media.toFixed(2));
+      </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 21</title>
+  </head>
+
+  <body>
+    <h1>
+      10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será
+      informado pelo usuário.
+    </h1>
+
+    <script>
+        let n = parseInt(
+          prompt('Digite um número para ver todas as tabuadas de 1 até o número digitado:')
+        );
+      
+        let t = 1;
+      
+        while (t <= n) {
+          document.write('Tabuada do ' + t + '<br>');
+      
+          let tabuada = 1;
+      
+          while (tabuada <= 10) {
+            document.write(t + ' x ' + tabuada + ' = ' + t * tabuada + '<br>');
+            tabuada++;
+          }
+      
+          document.write('<br>');
+          t++;
+        }
+      </script>
+      
+  </body>
+</html>
