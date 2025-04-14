@@ -1,0 +1,28 @@
+section {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(49, 93, 141);
+}
+
+.imagem {
+    background-image: url(imagens/fundo.jpg);
+    width: 45%;
+    height: 350px;
+    padding: 1.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto{
+    width: 45%;
+    height: 350px;
+    padding: 1.5%;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+}
