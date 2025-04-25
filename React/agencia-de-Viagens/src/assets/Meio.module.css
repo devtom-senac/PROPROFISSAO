@@ -1,0 +1,34 @@
+.container{
+    width: 95%;
+    height: 500px;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.mala{
+    width: 50%;
+}
+
+.mala img{
+    width: 600px; 
+}
+
+.texto{
+    width: 50%;
+    text-align: center;
+    font-family: tahoma;
+}
+
+.texto h1{
+    width: 90%;
+    font-size: 45px;
+    color: darkblue;
+    padding: 40px;
+}
+
+.texto p{
+    width: 90%;
+    font-size: 24px;
+}

@@ -1,0 +1,17 @@
+.corpo_texto{
+    position:relative;
+    width:450px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    color:#333;
+    text-align: center;
+    padding:10px;
+    font-size:16px;
+    font-family: helvetica;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+ 
+img{
+    width:50px;
+}

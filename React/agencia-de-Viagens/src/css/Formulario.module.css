@@ -1,0 +1,31 @@
+.corpo_texto{
+    position:relative;
+    width:450px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    color:#333;
+    text-align: center;
+    padding:10px;
+    font-size:16px;
+    border-radius: 10px;
+    font-family: helvetica;
+    padding-top: 10px;
+}
+
+form{
+    width:450px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+form input{
+    padding: 4px;
+    margin: 5px;
+}
+
+img{
+    width:50px;
+}
