@@ -1,0 +1,52 @@
+main{
+    width: 90%;
+    height: auto;
+    background-color: #6f7c27;
+    margin: auto;
+}
+
+.caixaHome1{
+    position: relative;
+    width: 45%;
+    height: 84%;
+    background-color: #C49898;
+    color: white;
+}
+
+.caixaHome1 h1{
+    width: 90%;
+    text-align: left;
+    font-size: 28px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.caixaHome1 p{
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.caixaHome2{
+    position: relative;
+    width: 45%;
+    height: 84%;
+    background-image: url(../imagens/loja.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.caixaHome3{
+    position: relative;
+    width: 45%;
+    height: 84%;
+    background-image: url(../imagens/loja.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+iframe{
+    width: 500px;
+}

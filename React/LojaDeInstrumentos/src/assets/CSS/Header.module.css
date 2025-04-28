@@ -1,0 +1,26 @@
+header{
+    width: 90%;
+    height: 200px;
+    background-image: url(../imagens/guitarras_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+header nav {
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    margin-left: 44.5%;
+    margin-top: 130px;
+}
+
+nav a{
+    text-decoration: none;
+    color: brown;
+    font-family: tahoma;
+}
